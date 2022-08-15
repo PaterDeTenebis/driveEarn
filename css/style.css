@@ -1,0 +1,102 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background: #0f1013;
+}
+
+/*Utils*/
+.textLg {
+  font-size: 20px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.textLight {
+  color: #fff;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.btnRound {
+  border-radius: 100%;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btnRound .btnRound_img {
+  width: 50%;
+  height: auto;
+}
+
+.carCard {
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#15161b), to(#0f1013));
+  background: linear-gradient(to bottom, #15161b, #0f1013);
+  background-image: url(../img/carCard_bgText.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.carCard .carCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.curBtn {
+  background: radial-gradient(#1c1e26, #16171e);
+}
+
+/*Sectional*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+
+.header .btnRound {
+  width: 50px;
+  height: 50px;
+  background: #15161b;
+}
+
+.main {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.main .carCard {
+  padding: 10px 15px;
+}
+
+.main .carCard .carCard_top .curBtn {
+  height: 100px;
+  width: 100px;
+}
+
+/*Mediaqueries*/
+/*# sourceMappingURL=style.css.map */
