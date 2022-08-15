@@ -9,6 +9,10 @@
   font-size: 20px;
 }
 
+.textMd {
+  font-size: 12px;
+}
+
 .fwb {
   font-weight: bold;
 }
@@ -43,9 +47,7 @@
 
 .carCard {
   border-radius: 15px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#15161b), to(#0f1013));
-  background: linear-gradient(to bottom, #15161b, #0f1013);
-  background-image: url(../img/carCard_bgText.png);
+  background-image: url(../img/carCard_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -70,14 +72,14 @@
 
 .btnMain {
   border-radius: 25px;
-  padding: 5px;
+  padding: 7px;
   border: none;
 }
 
 .btnBlue {
   background: #2651d0;
-  -webkit-box-shadow: inset 0px 0px 5px #fff;
-          box-shadow: inset 0px 0px 5px #fff;
+  -webkit-box-shadow: inset 0px 0px 3px #fff;
+          box-shadow: inset 0px 0px 3px #fff;
 }
 
 /*Sectional*/
@@ -109,9 +111,21 @@
   padding: 10px 15px;
 }
 
+.main .carCard .carCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main .carCard .carCard_top .curBtn {
-  height: 70px;
-  width: 70px;
+  height: 65px;
+  width: 65px;
 }
 
 .main .carCard .carCard_top .holder {
@@ -122,6 +136,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
+  width: 70%;
 }
 
 .main .carCard .carCard_top .holder .holder_bot {
@@ -135,10 +151,30 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 5px;
 }
 
 .main .carCard .carCard_top .holder .holder_bot .btnMain {
-  width: 40%;
+  width: 45%;
+  font-size: 11px;
+}
+
+.main .carCard .carCard_bot {
+  position: relative;
+  height: 150px;
+}
+
+.main .carCard .carCard_bot .carCard_botImg {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.main .carCard .carCard_bot .carCard_botImg .carCard_botImg_item {
+  width: 100%;
 }
 
 /*Mediaqueries*/

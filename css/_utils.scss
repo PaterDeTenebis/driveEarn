@@ -2,6 +2,10 @@
   font-size: 20px;
 }
 
+.textMd {
+  font-size: 12px;
+}
+
 .fwb {
   font-weight: bold;
 }
@@ -30,8 +34,7 @@
 
 .carCard {
   border-radius: 15px;
-  background: linear-gradient(to bottom, #15161b, #0f1013);
-  background-image: url(../img/carCard_bgText.png);
+  background-image: url(../img/carCard_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -47,16 +50,16 @@
 }
 
 .textSec {
-    color: #40434d;
+  color: #40434d;
 }
 
 .btnMain {
-    border-radius: 25px;
-    padding: 5px;
-    border: none;
+  border-radius: 25px;
+  padding: 7px;
+  border: none;
 }
 
 .btnBlue {
-    background: #2651d0;
-    box-shadow: inset 0px 0px 5px #fff;
+  background: #2651d0;
+  box-shadow: inset 0px 0px 3px #fff;
 }
