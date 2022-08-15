@@ -64,6 +64,22 @@
   background: radial-gradient(#1c1e26, #16171e);
 }
 
+.textSec {
+  color: #40434d;
+}
+
+.btnMain {
+  border-radius: 25px;
+  padding: 5px;
+  border: none;
+}
+
+.btnBlue {
+  background: #2651d0;
+  -webkit-box-shadow: inset 0px 0px 5px #fff;
+          box-shadow: inset 0px 0px 5px #fff;
+}
+
 /*Sectional*/
 .header {
   display: -webkit-box;
@@ -94,8 +110,35 @@
 }
 
 .main .carCard .carCard_top .curBtn {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+}
+
+.main .carCard .carCard_top .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .carCard .carCard_top .holder .holder_bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .carCard .carCard_top .holder .holder_bot .btnMain {
+  width: 40%;
 }
 
 /*Mediaqueries*/

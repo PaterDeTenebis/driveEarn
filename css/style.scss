@@ -30,8 +30,21 @@
 
     .carCard_top {
       .curBtn {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
+      }
+
+      .holder {
+        display: flex;
+        flex-direction: column;
+        .holder_bot {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .btnMain {
+                width: 40%;
+            }
+        }
       }
     }
   }
