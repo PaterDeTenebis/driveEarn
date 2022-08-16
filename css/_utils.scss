@@ -6,6 +6,10 @@
   font-size: 12px;
 }
 
+.textSm {
+  font-size: 9px;
+}
+
 .fwb {
   font-weight: bold;
 }
@@ -61,5 +65,16 @@
 
 .btnBlue {
   background: #2651d0;
-  box-shadow: inset 0px 0px 3px #fff;
+  box-shadow: inset 0px 0px 3px #ffffff44;
 }
+
+.btnRed {
+  background: #ba313f;
+  box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+.btnGreen {
+  background: #40aa20;
+  box-shadow: inset 0px 0px 3px #ffffff44;
+}
+

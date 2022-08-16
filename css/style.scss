@@ -43,23 +43,22 @@
         text-align: left;
         width: 70%;
 
-
         .holder_bot {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 5px;
-            .btnMain {
-                width: 45%;
-                font-size: 11px;
-            }
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 5px;
+          .btnMain {
+            width: 45%;
+            font-size: 11px;
+          }
         }
       }
     }
     .carCard_bot {
       position: relative;
       height: 150px;
-      
+
       .carCard_botImg {
         position: absolute;
         bottom: -35px;
@@ -69,6 +68,32 @@
         .carCard_botImg_item {
           width: 100%;
         }
+      }
+    }
+  }
+
+  .shortstats {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 40px;
+    box-shadow: inset 0px 0px 3px #ffffff24;
+
+    .btnMain {
+      width: 23%;
+    }
+
+    .shortstats_item {
+      display: flex;
+      width: 18%;
+      justify-content: space-between;
+      align-items: center;
+
+      .btnRound {
+        height: 25px;
+        width: 25px;
       }
     }
   }
