@@ -44,11 +44,6 @@
           align-items: center;
 }
 
-.btnRound .btnRound_img {
-  width: 50%;
-  height: auto;
-}
-
 .carCard {
   border-radius: 15px;
   background-image: url(../img/carCard_bg.png);
@@ -96,6 +91,16 @@
   background: #40aa20;
   -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
           box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+.icon {
+  width: 50%;
+  height: auto;
+}
+
+.bigIcon {
+  width: 100%;
+  height: auto;
 }
 
 /*Sectional*/
@@ -230,6 +235,56 @@
 .main .shortstats .shortstats_item .btnRound {
   height: 25px;
   width: 25px;
+}
+
+.main .statsSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  background: #15161b;
+  border-radius: 13px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.main .statsSingle .statsSingle_icon {
+  width: 35px;
+  height: 35px;
+}
+
+.main .statsSingle .statsSingle_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 40%;
+}
+
+.main .statsSingle .statsSingle_info .range {
+  position: relative;
+  width: 100%;
+}
+
+.main .statsSingle .statsSingle_info .range .rangeInput {
+  width: 100%;
+}
+
+.main .statsSingle .statsSingle_add {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 }
 
 /*Mediaqueries*/

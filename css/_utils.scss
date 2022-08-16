@@ -29,11 +29,6 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-
-  .btnRound_img {
-    width: 50%;
-    height: auto;
-  }
 }
 
 .carCard {
@@ -78,3 +73,12 @@
   box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.icon {
+  width: 50%;
+  height: auto;
+}
+
+.bigIcon {
+  width: 100%;
+  height: auto;
+}

@@ -97,6 +97,43 @@
       }
     }
   }
+
+  .statsSingle {
+    display: flex;
+    padding: 10px;
+    background: #15161b;
+    border-radius: 13px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .statsSingle_icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    .statsSingle_info {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 40%;
+
+      .range {
+        position: relative;
+        width: 100%;
+
+        .rangeInput {
+          width: 100%;
+        }
+      }
+    }
+
+    .statsSingle_add {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+    }
+  }
 }
 
 /*Mediaqueries*/
