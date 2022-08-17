@@ -30,10 +30,16 @@
     background: #15161b;
   }
 }
-
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
 .main {
   padding: 0 10px;
   margin-top: 20px;
+  position: relative;
 
   .carCard {
     padding: 10px 15px;
@@ -110,7 +116,7 @@
 
   .statsSingle {
     display: flex;
-    padding: 10px;
+    padding: 15px;
     background: #15161b;
     border-radius: 13px;
     justify-content: space-between;
@@ -159,36 +165,87 @@
       width: 20px;
       height: 20px;
       border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #15161b;
-    border-radius: 25px;
-    margin-top: 25px;
+  
 
-    .menuItem {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+  .carouselWrapper {
+    .walletCard {
+      background-image: url(../img/walleCardBg.png);
+      background-position: center top;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 15px 20px;
 
-      .menuItem_img {
-        width: 25px;
-        height: 25px;
+      .walletCard_top {
+        display: flex;
+        justify-content: space-between;
+
+        .walletCard_topItem {
+          .textSec {
+            color: #93aefc;
+            display: flex;
+            width: fit-content;
+            font-weight: normal;
+            align-items: center;
+          }
+          .btnMain {
+            background: #2850c5;
+            font-weight: bold;
+          }
+          .btnSmall {
+            margin-left: 15px;
+          }
+        }
       }
 
-      .menuItem_text {
-        margin-top: 10px;
+      .walletBalance {
+        margin: 20px 0;
       }
     }
+
+  }
+
+  .walletLog {
+    margin-top: 20px;
   }
 }
 
+.menu {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #15161b;
+  border-radius: 25px;
+  left: 5%;
+  
+
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .menuItem_img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .menuItem_text {
+      margin-top: 10px;
+    }
+  }
+}
 /*Mediaqueries*/
 @import 'mediaqueries';

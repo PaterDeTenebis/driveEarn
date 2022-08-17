@@ -15,6 +15,10 @@
 }
 
 /*Utils*/
+.textXl {
+  font-size: 30px;
+}
+
 .textLg {
   font-size: 20px;
 }
@@ -128,6 +132,36 @@
   width: 68% !important;
 }
 
+.btnSmall {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #7f9fff;
+  border: none;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carInd {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 100%;
+}
+
+.bordered {
+  border: 1px solid #fff !important;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.ml {
+  margin-left: 10px;
+}
+
 /*Sectional*/
 .header {
   display: -webkit-box;
@@ -148,9 +182,22 @@
   background: #15161b;
 }
 
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px;
+}
+
 .main {
   padding: 0 10px;
   margin-top: 20px;
+  position: relative;
 }
 
 .main .carCard {
@@ -266,7 +313,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 15px;
   background: #15161b;
   border-radius: 13px;
   -webkit-box-pack: justify;
@@ -327,9 +374,71 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-.main .menu {
+.main .carouselWrapper .walletCard {
+  background-image: url(../img/walleCardBg.png);
+  background-position: center top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 15px 20px;
+}
+
+.main .carouselWrapper .walletCard .walletCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .textSec {
+  color: #93aefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .btnMain {
+  background: #2850c5;
+  font-weight: bold;
+}
+
+.main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .btnSmall {
+  margin-left: 15px;
+}
+
+.main .carouselWrapper .walletCard .walletBalance {
+  margin: 20px 0;
+}
+
+.main .walletLog {
+  margin-top: 20px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,10 +451,10 @@
   padding: 15px;
   background: #15161b;
   border-radius: 25px;
-  margin-top: 25px;
+  left: 5%;
 }
 
-.main .menu .menuItem {
+.menu .menuItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,12 +471,12 @@
   text-align: center;
 }
 
-.main .menu .menuItem .menuItem_img {
+.menu .menuItem .menuItem_img {
   width: 25px;
   height: 25px;
 }
 
-.main .menu .menuItem .menuItem_text {
+.menu .menuItem .menuItem_text {
   margin-top: 10px;
 }
 

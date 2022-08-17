@@ -1,3 +1,7 @@
+.textXl {
+  font-size: 30px;
+}
+
 .textLg {
   font-size: 20px;
 }
@@ -93,9 +97,37 @@
 }
 
 .singleEarned {
-  
-
   .singleEarned_info {
-    width: 68%!important;
+    width: 68% !important;
   }
+}
+
+.btnSmall {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #7f9fff;
+  border: none;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carInd {
+  width: 5px!important;
+  height: 5px!important;
+  border-radius: 100%;
+}
+
+.bordered {
+  border: 1px solid #fff !important;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.ml {
+  margin-left: 10px;
 }
