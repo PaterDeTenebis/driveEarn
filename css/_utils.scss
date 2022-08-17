@@ -21,7 +21,9 @@
 .textSuccess {
   color: #84d078;
 }
-
+.fwb {
+  font-weight: bold;
+}
 .ttu {
   text-transform: uppercase;
 }
@@ -130,4 +132,16 @@
 
 .ml {
   margin-left: 10px;
+}
+
+.flexRowCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

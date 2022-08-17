@@ -3,6 +3,7 @@
   padding: 0;
   background: #0f1013;
   font-weight: bold;
+  text-transform: uppercase;
 
   .bodylink {
     text-decoration: none;
@@ -172,8 +173,6 @@
     }
   }
 
-  
-
   .carouselWrapper {
     .walletCard {
       background-image: url(../img/walleCardBg.png);
@@ -208,11 +207,36 @@
         margin: 20px 0;
       }
     }
-
   }
 
   .walletLog {
     margin-top: 20px;
+  }
+
+  .carsSection {
+    .shortstats {
+      margin-top: 20px;
+    }
+    .carsCard {
+      padding: 20px;
+      border-radius: 15px;
+      background: #15161b;
+      .carsCard_header {
+        .carsCard_header_item {
+          width: 30%;
+          height: 45px;
+          padding: 10px;
+          border-radius: 20px;
+          .btnRound {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      .carsCard_img {
+        margin-top: 20px;
+      }
+    }
   }
 }
 
@@ -228,7 +252,6 @@
   background: #15161b;
   border-radius: 25px;
   left: 5%;
-  
 
   .menuItem {
     display: flex;
