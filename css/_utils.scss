@@ -7,7 +7,7 @@
 }
 
 .textMd {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .textSm {
@@ -62,6 +62,7 @@
   border-radius: 25px;
   padding: 7px;
   border: none;
+  background: none;
 }
 
 .btnBlue {
@@ -117,8 +118,8 @@
 }
 
 .carInd {
-  width: 5px!important;
-  height: 5px!important;
+  width: 5px !important;
+  height: 5px !important;
   border-radius: 100%;
 }
 
@@ -144,4 +145,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cardDark {
+  padding: 10px;
+  background: #0d0e15;
+  border-radius: 15px;
+}
+
+.carsCard_header_item {
+  width: 32%;
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 20px;
+  .btnRound {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 3;
 }

@@ -1,9 +1,11 @@
 .body {
   margin: 0;
   padding: 0;
-  background: #0f1013;
+  background: #06070b;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'BebasNeue-Bold', sans-serif;
 
   .bodylink {
     text-decoration: none;
@@ -28,7 +30,7 @@
   .btnRound {
     width: 50px;
     height: 50px;
-    background: #15161b;
+    background: #0d0e15;
   }
 }
 .wrapper {
@@ -38,7 +40,7 @@
   padding-bottom: 100px;
 }
 .main {
-  padding: 0 10px;
+  padding: 0 20px;
   margin-top: 20px;
   position: relative;
 
@@ -92,7 +94,7 @@
   .shortstats {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
     margin-top: 60px;
     border-radius: 40px;
@@ -118,7 +120,7 @@
   .statsSingle {
     display: flex;
     padding: 15px;
-    background: #15161b;
+    background: #0d0e15;
     border-radius: 13px;
     justify-content: space-between;
     align-items: center;
@@ -220,12 +222,12 @@
     .carsCard {
       padding: 20px;
       border-radius: 15px;
-      background: #15161b;
+      background: #0d0e15;
       .carsCard_header {
         .carsCard_header_item {
-          width: 30%;
+          width: 32%;
           height: 45px;
-          padding: 10px;
+          padding: 0 10px;
           border-radius: 20px;
           .btnRound {
             width: 25px;
@@ -238,6 +240,72 @@
       }
     }
   }
+  .visualSection {
+    margin-top: 20px;
+    .vlWrapper {
+      margin-top: 15px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .visualList {
+      width: 440px;
+      .visualList_item {
+        width: 100px;
+      }
+    }
+    .visualDescr {
+      margin-top: 20px;
+      .cardDark {
+        .itemPreview {
+          padding: 0 15px;
+          .itemPreview_side {
+            position: relative;
+            width: 44%;
+            .btnRound {
+              width: 25px;
+              height: 25px;
+            }
+
+            .btnMain,
+            .carsCard_header_item {
+              width: 80%;
+              margin: 5px;
+            }
+            .bigIcon {
+              position: relative;
+              z-index: 2;
+            }
+            .previeBg {
+              position: absolute;
+              width: 85px;
+              height: 85px;
+              border-radius: 100%;
+              background: #11131a;
+              right: 10px;
+              bottom: -10px;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#spoilers,
+#bumper,
+#wheels,
+#hood {
+  &:hover,
+  &:focus,
+  &:active {
+    background: #2651d0;
+    box-shadow: inset 0px 0px 3px #ffffff44;
+  }
 }
 
 .menu {
@@ -249,7 +317,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background: #15161b;
+  background: #0d0e15;
   border-radius: 25px;
   left: 5%;
 

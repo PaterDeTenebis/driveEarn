@@ -10,6 +10,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="body">
@@ -22,27 +23,99 @@
       </div>
       <main class="main">
         <div class="carsSection">
-          <div class="carsCard">
-            <div class="carsCard_header flexRowCenter">
-              <div class="carsCard_header_item flexRowCenter boxShadow">
-                <div class="btnRound btnPink">
-                  <img src="img/e-lable.png" alt="currency icon" class="icon" />
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carsCard">
+                  <div class="carsCard_header flexRowCenter">
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound btnPink">
+                        <img src="img/e-lable.png" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">2500 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound boxShadow">
+                        <img src="img/wallet.svg" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">2500 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexCenter boxShadow">
+                      <div class="textLight textMd">0 level</div>
+                    </div>
+                  </div>
+                  <div class="carsCard_img">
+                    <img class="bigIcon" src="img/level1.png" alt="" />
+                  </div>
                 </div>
-                <div class="textLight textMd">2500 drv</div>
               </div>
-              <div class="carsCard_header_item flexRowCenter boxShadow">
-                <div class="btnRound boxShadow">
-                  <img src="img/wallet.svg" alt="currency icon" class="icon" />
+              <div class="carousel-item">
+                <div class="carsCard">
+                  <div class="carsCard_header flexRowCenter">
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound btnPink">
+                        <img src="img/e-lable.png" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">2700 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound boxShadow">
+                        <img src="img/wallet.svg" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">2500 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexCenter boxShadow">
+                      <div class="textLight textMd">1 level</div>
+                    </div>
+                  </div>
+                  <div class="carsCard_img">
+                    <img class="bigIcon" src="img/level1.png" alt="" />
+                  </div>
                 </div>
-                <div class="textLight textMd">2500 drv</div>
               </div>
-              <div class="carsCard_header_item flexCenter boxShadow">
-                <div class="textLight textMd">0 level</div>
+              <div class="carousel-item">
+                <div class="carsCard">
+                  <div class="carsCard_header flexRowCenter">
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound btnPink">
+                        <img src="img/e-lable.png" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">3500 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexRowCenter boxShadow">
+                      <div class="btnRound boxShadow">
+                        <img src="img/wallet.svg" alt="currency icon" class="icon" />
+                      </div>
+                      <div class="textLight textMd">2500 drv</div>
+                    </div>
+                    <div class="carsCard_header_item flexCenter boxShadow">
+                      <div class="textLight textMd">2 level</div>
+                    </div>
+                  </div>
+                  <div class="carsCard_img">
+                    <img class="bigIcon" src="img/level1.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="carsCard_img ">
-                <img class="bigIcon" src="img/level1.png" alt="">
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
           <div class="shortstats">
             <div class="shortstats_item">
@@ -64,6 +137,37 @@
               <div class="textMd textLight">4.4</div>
             </div>
             <button class="btnMain btnBlue ttu textLight fwb textMd">buy</button>
+          </div>
+        </div>
+        <div class="visualSection">
+          <div class="textLg textLight ttu">visual tuning</div>
+          <div class="vlWrapper">
+            <div class="visualList flexRowCenter">
+              <button
+                class="visualList_item btnMain boxShadow textLight textMd ttu fwb"
+                id="spoilers"
+              >
+                spoilers
+              </button>
+              <button
+                class="visualList_item btnMain boxShadow textLight textMd ttu fwb"
+                id="bumper"
+              >
+                bumper
+              </button>
+              <button
+                class="visualList_item btnMain boxShadow textLight textMd ttu fwb"
+                id="wheels"
+              >
+                wheels
+              </button>
+              <button class="visualList_item btnMain boxShadow textLight textMd ttu fwb" id="hood">
+                hood
+              </button>
+            </div>
+          </div>
+          <div class="visualDescr">
+            <div class="cardDark" id="visualDescr_card"></div>
           </div>
         </div>
       </main>
