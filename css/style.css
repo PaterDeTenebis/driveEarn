@@ -5,6 +5,15 @@
   font-weight: bold;
 }
 
+.body .bodylink {
+  text-decoration: none;
+}
+
+.body .bodylink:hover, .body .bodylink:focus, .body .bodylink:active {
+  -webkit-filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
+}
+
 /*Utils*/
 .textLg {
   font-size: 20px;
@@ -20,6 +29,10 @@
 
 .textLight {
   color: #fff;
+}
+
+.textSuccess {
+  color: #84d078;
 }
 
 .ttu {
@@ -90,6 +103,17 @@
           box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.btnPink {
+  background: #a928c1;
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+.boxShadow {
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff24;
+          box-shadow: inset 0px 0px 3px #ffffff24;
+}
+
 .icon {
   width: 50%;
   height: auto;
@@ -98,6 +122,10 @@
 .bigIcon {
   width: 100%;
   height: auto;
+}
+
+.singleEarned .singleEarned_info {
+  width: 68% !important;
 }
 
 /*Sectional*/
@@ -179,7 +207,7 @@
 
 .main .carCard .carCard_bot {
   position: relative;
-  height: 150px;
+  height: 166px;
 }
 
 .main .carCard .carCard_bot .carCard_botImg {
@@ -274,6 +302,23 @@
   width: 100%;
 }
 
+.main .statsSingle .statsSingle_info .range .rangeInd {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.main .statsSingle .statsSingle_info .range .rangeMin {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.main .statsSingle .statsSingle_info .range .rangeMax {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+}
+
 .main .statsSingle .statsSingle_info .range .rangeInput {
   width: 100%;
 }
@@ -282,6 +327,48 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
+}
+
+.main .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background: #15161b;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+.main .menu .menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main .menu .menuItem .menuItem_img {
+  width: 25px;
+  height: 25px;
+}
+
+.main .menu .menuItem .menuItem_text {
+  margin-top: 10px;
 }
 
 /*Mediaqueries*/

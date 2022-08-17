@@ -3,6 +3,15 @@
   padding: 0;
   background: #0f1013;
   font-weight: bold;
+
+  .bodylink {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
+    }
+  }
 }
 
 /*Utils*/
@@ -58,7 +67,7 @@
     }
     .carCard_bot {
       position: relative;
-      height: 150px;
+      height: 166px;
 
       .carCard_botImg {
         position: absolute;
@@ -122,7 +131,23 @@
       .range {
         position: relative;
         width: 100%;
-        
+
+        .rangeInd {
+          font-size: 12px;
+          color: #ffffff;
+        }
+
+        .rangeMin {
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+        }
+
+        .rangeMax {
+          position: absolute;
+          bottom: -8px;
+          right: 0;
+        }
 
         .rangeInput {
           width: 100%;
@@ -134,6 +159,33 @@
       width: 20px;
       height: 20px;
       border-radius: 100%;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #15161b;
+    border-radius: 25px;
+    margin-top: 25px;
+
+    .menuItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .menuItem_img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .menuItem_text {
+        margin-top: 10px;
+      }
     }
   }
 }

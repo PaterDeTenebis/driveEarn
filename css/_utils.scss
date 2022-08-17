@@ -14,6 +14,10 @@
   color: #fff;
 }
 
+.textSuccess {
+  color: #84d078;
+}
+
 .ttu {
   text-transform: uppercase;
 }
@@ -69,6 +73,15 @@
   box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.btnPink {
+  background: #a928c1;
+  box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+.boxShadow {
+  box-shadow: inset 0px 0px 3px #ffffff24;
+}
+
 .icon {
   width: 50%;
   height: auto;
@@ -77,4 +90,12 @@
 .bigIcon {
   width: 100%;
   height: auto;
+}
+
+.singleEarned {
+  
+
+  .singleEarned_info {
+    width: 68%!important;
+  }
 }

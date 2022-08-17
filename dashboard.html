@@ -68,7 +68,9 @@
           <div class="statsSingle_info">
             <div class="textLight textMd ttu">fuel left</div>
             <div class="range">
-              <input class="rangeInput" type="range" min="0" max="15" value="4" />
+              <input class="rangeInput" id="rangeFuel" type="range" min="0" max="15" value="4" />
+              <div class="rangeMin rangeInd" id="fuelMin"></div>
+              <div class="rangeMax rangeInd" id="fuelMax"></div>
             </div>
           </div>
           <div class="statsSingle_add">
@@ -76,33 +78,70 @@
           </div>
         </div>
         <div class="statsSingle">
-          <div class="statsSingle_icon btnRound btnBlue">
-            <img class="icon" src="img/fuel-pump.png" alt="fuel pump" />
+          <div class="statsSingle_icon btnRound boxShadow">
+            <span class="textLight ttu textSm">24 h</span>
           </div>
           <div class="statsSingle_info">
             <div class="textLight textMd ttu">fuel left</div>
             <div class="range">
-              <input class="rangeInput" type="range" min="0" max="15" value="4" />
+              <input
+                class="rangeInput"
+                id="rangeDistance"
+                type="range"
+                min="0"
+                max="1000"
+                value="4"
+              />
+              <div class="rangeMin rangeInd ttu" id="distanceMin"></div>
+              <div class="rangeMax rangeInd ttu" id="distanceMax"></div>
             </div>
           </div>
           <div class="statsSingle_add">
             <img class="bigIcon" src="img/plus.png" alt="add fuel" />
           </div>
         </div>
-        <div class="statsSingle">
-          <div class="statsSingle_icon btnRound btnBlue">
-            <img class="icon" src="img/fuel-pump.png" alt="fuel pump" />
+        <div class="statsSingle singleEarned">
+          <div class="statsSingle_icon btnRound btnPink">
+            <img class="icon" src="img/e-lable.png" alt="earned lable" />
           </div>
-          <div class="statsSingle_info">
-            <div class="textLight textMd ttu">fuel left</div>
-            <div class="range">
-              <input class="rangeInput" type="range" min="0" max="15" value="4" />
-              <div class="rangeMin textLight textMd"></div>
+          <div class="statsSingle_info singleEarned_info">
+            <div class="textSec textMd ttu">total earned (ern/drv)</div>
+            <div class="textLight textMd ttu">
+              drv + 266 <span class="textSuccess textSm">+20.4%</span>
             </div>
           </div>
-          <div class="statsSingle_add">
-            <img class="bigIcon" src="img/plus.png" alt="add fuel" />
-          </div>
+        </div>
+        <div class="menu">
+          <a href="#" class="bodylink">
+            <div class="menuItem">
+              <img src="img/stat.svg" alt="statitic" class="menuItem_img" />
+              <span class="menuItem_text textLight textSm ttu">statitic</span>
+            </div>
+          </a>
+          <a href="#" class="bodylink">
+            <div class="menuItem">
+              <img src="img/wallet .svg" alt="statitic" class="menuItem_img" />
+              <span class="menuItem_text textLight textSm ttu">walle</span>
+            </div>
+          </a>
+          <a href="#" class="bodylink">
+            <div class="menuItem">
+              <img src="img/dash.svg" alt="statitic" class="menuItem_img" />
+              <span class="menuItem_text textLight textSm ttu">dashboard</span>
+            </div>
+          </a>
+          <a href="#" class="bodylink">
+            <div class="menuItem">
+              <img src="img/star.svg" alt="statitic" class="menuItem_img" />
+              <span class="menuItem_text textLight textSm ttu">pvp</span>
+            </div>
+          </a>
+          <a href="#" class="bodylink">
+            <div class="menuItem">
+              <img src="img/car.svg" alt="statitic" class="menuItem_img" />
+              <span class="menuItem_text textLight textSm ttu">store</span>
+            </div>
+          </a>
         </div>
       </main>
     </div>
@@ -111,6 +150,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
