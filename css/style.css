@@ -127,6 +127,13 @@
           box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.btnWhite {
+  background: #fff;
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
+  color: #000;
+}
+
 .boxShadow {
   -webkit-box-shadow: inset 0px 0px 3px #ffffff24;
           box-shadow: inset 0px 0px 3px #ffffff24;
@@ -231,6 +238,10 @@
 
 .w100 {
   width: 100% !important;
+}
+
+.w100 .visualList_item {
+  margin-left: 15px;
 }
 
 /*Sectional*/
@@ -606,8 +617,37 @@
 }
 
 .main .statHolder .cardDark {
+  padding: 20px;
   width: 49%;
   margin: 10px 0;
+}
+
+.main .statHolder .cardDark .btnMain {
+  margin-top: 15px;
+}
+
+.main .statHolder .cardDark .w100 .bBlue::before {
+  background: #2651d0;
+}
+
+.main .statHolder .cardDark .w100 .bPurp::before {
+  background: #5a07a7;
+}
+
+.main .statHolder .cardDark .w100 .bBlue,
+.main .statHolder .cardDark .w100 .bPurp {
+  position: relative;
+}
+
+.main .statHolder .cardDark .w100 .bBlue::before,
+.main .statHolder .cardDark .w100 .bPurp::before {
+  position: absolute;
+  content: '';
+  left: -10px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
 }
 
 .main .statHolder .cardDark .btnRound {

@@ -253,6 +253,7 @@
     }
     .visualList {
       width: 440px;
+      
       .visualList_item {
         width: 100px;
       }
@@ -300,8 +301,37 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .cardDark {
+      padding: 20px;
       width: 49%;
       margin: 10px 0;
+      .btnMain {
+        margin-top: 15px;
+      }
+      .w100 {
+        .bBlue {
+          &::before {
+            background: #2651d0;
+          }
+        }
+        .bPurp {
+          &::before {
+            background: #5a07a7;
+          }
+        }
+        .bBlue,
+        .bPurp {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: '';
+            left: -10px;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+          }
+        }
+      }
       .btnRound {
         width: 50px;
         height: 50px;

@@ -90,6 +90,12 @@
   box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.btnWhite {
+  background: #fff;
+  box-shadow: inset 0px 0px 3px #ffffff44;
+  color: #000;
+}
+
 .boxShadow {
   box-shadow: inset 0px 0px 3px #ffffff24;
 }
@@ -181,5 +187,8 @@
 }
 
 .w100 {
-  width: 100%!important;
+  width: 100% !important;
+  .visualList_item {
+    margin-left: 15px;
+  }
 }

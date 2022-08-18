@@ -428,6 +428,186 @@ $('#engine').on('click', engineList);
 $('#turbine').on('click', turbineList);
 $('#gasTanks').on('click', gasTanksList);
 
+// stat tabs scripts ----->
+
+function todayList() {
+  let content = `
+  <div class="statHolder">
+    <div class="cardDark">
+      <div class="btnRound btnPink">
+        <img src="img/e-lable.png" class="icon" />
+      </div>
+      <div class="textSec textMd">ern recieved</div>
+      <div class="textLight textLg">
+        +266 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnBlue">
+        <img src="img/D.png" class="icon" />
+      </div>
+      <div class="textSec textMd">drv recieved</div>
+      <div class="textLight textLg">
+        +2660 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnPurple">
+        <img src="img/location.png" class="icon" />
+      </div>
+      <div class="textSec textMd">distance (km)</div>
+      <div class="textLight textLg">
+        +15 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="textSec textMd">assets</div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bBlue">
+            ern
+        </div>
+        <div class="textLight textLg">
+            1500
+        </div>
+      </div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bPurp">
+            drv
+        </div>
+        <div class="textLight textLg">
+            1500
+        </div>
+      </div>
+      <button class="btnMain btnBlue textLg textLight ttu fwb w100">withdraw</button>
+    </div>
+  </div>`;
+
+  $('#all').removeClass('btnWhite');
+  $('#month').removeClass('btnWhite');
+  $('#today').addClass('btnWhite');
+  $('#visualDescr_card3').html(content);
+}
+
+function monthList() {
+  let content = `
+  <div class="statHolder">
+    <div class="cardDark">
+      <div class="btnRound btnPink">
+        <img src="img/e-lable.png" class="icon" />
+      </div>
+      <div class="textSec textMd">ern recieved</div>
+      <div class="textLight textLg">
+        +1266 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnBlue">
+        <img src="img/D.png" class="icon" />
+      </div>
+      <div class="textSec textMd">drv recieved</div>
+      <div class="textLight textLg">
+        +2660 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnPurple">
+        <img src="img/location.png" class="icon" />
+      </div>
+      <div class="textSec textMd">distance (km)</div>
+      <div class="textLight textLg">
+        +15 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="textSec textMd">assets</div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bBlue">
+            ern
+        </div>
+        <div class="textLight textLg">
+            3500
+        </div>
+      </div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bPurp">
+            drv
+        </div>
+        <div class="textLight textLg">
+            2500
+        </div>
+      </div>
+      <button class="btnMain btnBlue textLg textLight ttu fwb w100">withdraw</button>
+    </div>
+  </div>`;
+
+  $('#all').removeClass('btnWhite');
+  $('#today').removeClass('btnWhite');
+  $('#month').addClass('btnWhite');
+  $('#visualDescr_card3').html(content);
+}
+
+function allList() {
+  let content = `
+  <div class="statHolder">
+    <div class="cardDark">
+      <div class="btnRound btnPink">
+        <img src="img/e-lable.png" class="icon" />
+      </div>
+      <div class="textSec textMd">ern recieved</div>
+      <div class="textLight textLg">
+        +2266 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnBlue">
+        <img src="img/D.png" class="icon" />
+      </div>
+      <div class="textSec textMd">drv recieved</div>
+      <div class="textLight textLg">
+        +3660 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="btnRound btnPurple">
+        <img src="img/location.png" class="icon" />
+      </div>
+      <div class="textSec textMd">distance (km)</div>
+      <div class="textLight textLg">
+        +15 <span class="textSuccess textSm">+20.4%</span>
+      </div>
+    </div>
+    <div class="cardDark">
+      <div class="textSec textMd">assets</div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bBlue">
+            ern
+        </div>
+        <div class="textLight textLg">
+            4500
+        </div>
+      </div>
+      <div class="w100 flexRowCenter">
+        <div class="textLight textLg bPurp">
+            drv
+        </div>
+        <div class="textLight textLg">
+            6500
+        </div>
+      </div>
+      <button class="btnMain btnBlue textLg textLight ttu fwb w100">withdraw</button>
+    </div>
+  </div>`;
+
+  $('#month').removeClass('btnWhite');
+  $('#today').removeClass('btnWhite');
+  $('#all').addClass('btnWhite');
+  $('#visualDescr_card3').html(content);
+}
+
+$('#today').on('click', todayList);
+$('#month').on('click', monthList);
+$('#all').on('click', allList);
+
 // range setter scipt ------>
 
 function setRange() {
@@ -442,4 +622,4 @@ function setRange() {
   $('#distanceMax').html(distanceMax + '&nbspkm');
 }
 
-$(document).ready(setRange, spoilersList(), engineList());
+$(document).ready(setRange, spoilersList(), engineList(), todayList());
