@@ -227,6 +227,209 @@ $('#bumper').on('click', bumperList);
 $('#wheels').on('click', wheelsList);
 $('#hood').on('click', hoodList);
 
+//technical tuning scripts ----->
+
+function engineList() {
+  let content = ` 
+  <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="itemPreview flexRowCenter">
+          <div class="itemPreview_side">
+            <div class="previeBg"></div>
+            <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+          </div>
+          <div class="itemPreview_side">
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound btnPink">
+                <img src="img/e-lable.png" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight textMd">1500 drv</div>
+            </div>
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound boxShadow">
+                <img src="img/star.svg" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight ttu textMd">1 level</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      <div class="itemPreview flexRowCenter">
+      <div class="itemPreview_side">
+        <div class="previeBg"></div>
+        <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+      </div>
+      <div class="itemPreview_side">
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound btnPink">
+            <img src="img/e-lable.png" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight textMd">2500 drv</div>
+        </div>
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound boxShadow">
+            <img src="img/star.svg" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight ttu textMd">2 level</div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>`;
+
+  $('#engine').addClass('btnBlue');
+  $('#turbine').removeClass('btnBlue');
+  $('#gasTanks').removeClass('btnBlue');
+  $('#visualDescr_card2').html(content);
+}
+
+function turbineList() {
+  let content = ` 
+  <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="itemPreview flexRowCenter">
+          <div class="itemPreview_side">
+            <div class="previeBg"></div>
+            <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+          </div>
+          <div class="itemPreview_side">
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound btnPink">
+                <img src="img/e-lable.png" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight textMd">2500 drv</div>
+            </div>
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound boxShadow">
+                <img src="img/star.svg" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight ttu textMd">1 level</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      <div class="itemPreview flexRowCenter">
+      <div class="itemPreview_side">
+        <div class="previeBg"></div>
+        <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+      </div>
+      <div class="itemPreview_side">
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound btnPink">
+            <img src="img/e-lable.png" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight textMd">3500 drv</div>
+        </div>
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound boxShadow">
+            <img src="img/star.svg" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight ttu textMd">2 level</div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>`;
+
+  $(this).addClass('btnBlue');
+  $('#engine').removeClass('btnBlue');
+  $('#gasTanks').removeClass('btnBlue');
+  $('#visualDescr_card2').html(content);
+}
+
+function gasTanksList() {
+  let content = ` 
+  <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="itemPreview flexRowCenter">
+          <div class="itemPreview_side">
+            <div class="previeBg"></div>
+            <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+          </div>
+          <div class="itemPreview_side">
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound btnPink">
+                <img src="img/e-lable.png" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight textMd">4500 drv</div>
+            </div>
+            <div class="carsCard_header_item flexRowCenter boxShadow">
+              <div class="btnRound boxShadow">
+                <img src="img/star.svg" alt="currency icon" class="icon" />
+              </div>
+              <div class="textLight ttu textMd">1 level</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      <div class="itemPreview flexRowCenter">
+      <div class="itemPreview_side">
+        <div class="previeBg"></div>
+        <img src="img/engine.png" alt="spoiler" class="bigIcon" />
+      </div>
+      <div class="itemPreview_side">
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound btnPink">
+            <img src="img/e-lable.png" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight textMd">5500 drv</div>
+        </div>
+        <div class="carsCard_header_item flexRowCenter boxShadow">
+          <div class="btnRound boxShadow">
+            <img src="img/star.svg" alt="currency icon" class="icon" />
+          </div>
+          <div class="textLight ttu textMd">2 level</div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>`;
+
+  $(this).addClass('btnBlue');
+  $('#engine').removeClass('btnBlue');
+  $('#turbine').removeClass('btnBlue');
+  $('#visualDescr_card2').html(content);
+}
+
+$('#engine').on('click', engineList);
+$('#turbine').on('click', turbineList);
+$('#gasTanks').on('click', gasTanksList);
+
+// range setter scipt ------>
+
 function setRange() {
   var fuelMin = $('#rangeFuel').attr('min');
   var fuelMax = $('#rangeFuel').attr('max');
@@ -239,4 +442,4 @@ function setRange() {
   $('#distanceMax').html(distanceMax + '&nbspkm');
 }
 
-$(document).ready(setRange, spoilersList());
+$(document).ready(setRange, spoilersList(), engineList());

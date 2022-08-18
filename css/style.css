@@ -5,13 +5,16 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "BebasNeue-Bold", sans-serif;
+  font-family: 'BebasNeue-Bold', sans-serif;
 }
+
 .body .bodylink {
   text-decoration: none;
 }
+
 .body .bodylink:hover, .body .bodylink:focus, .body .bodylink:active {
-  filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
+  -webkit-filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(198deg) brightness(1);
 }
 
 /*Utils*/
@@ -50,10 +53,16 @@
 .btnRound {
   border-radius: 100%;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carCard {
@@ -63,9 +72,14 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .carCard .carCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .curBtn {
@@ -85,26 +99,37 @@
 
 .btnBlue {
   background: #2651d0;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2666666667);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
 .btnRed {
   background: #ba313f;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2666666667);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
 .btnGreen {
   background: #40aa20;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2666666667);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
 .btnPink {
   background: #a928c1;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2666666667);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+.btnPurple {
+  background: #5a07a7;
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
 .boxShadow {
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.1411764706);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff24;
+          box-shadow: inset 0px 0px 3px #ffffff24;
 }
 
 .icon {
@@ -152,15 +177,27 @@
 }
 
 .flexRowCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flexCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cardDark {
@@ -175,6 +212,7 @@
   padding: 0 10px;
   border-radius: 20px;
 }
+
 .carsCard_header_item .btnRound {
   width: 25px;
   height: 25px;
@@ -191,13 +229,24 @@
   z-index: 3;
 }
 
+.w100 {
+  width: 100% !important;
+}
+
 /*Sectional*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 20px;
 }
+
 .header .btnRound {
   width: 50px;
   height: 50px;
@@ -206,8 +255,13 @@
 
 .wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 100px;
 }
 
@@ -216,119 +270,193 @@
   margin-top: 20px;
   position: relative;
 }
+
 .main .carCard {
   padding: 10px 15px;
 }
+
 .main .carCard .carCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .main .carCard .carCard_top .curBtn {
   height: 65px;
   width: 65px;
 }
+
 .main .carCard .carCard_top .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
   width: 70%;
 }
+
 .main .carCard .carCard_top .holder .holder_bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 5px;
 }
+
 .main .carCard .carCard_top .holder .holder_bot .btnMain {
   width: 45%;
   font-size: 11px;
 }
+
 .main .carCard .carCard_bot {
   position: relative;
   height: 166px;
 }
+
 .main .carCard .carCard_bot .carCard_botImg {
   position: absolute;
   bottom: -35px;
   left: 0;
   width: 100%;
-  transform: scale(1.12);
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
 }
+
 .main .carCard .carCard_bot .carCard_botImg .carCard_botImg_item {
   width: 100%;
 }
+
 .main .shortstats {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
   border-radius: 40px;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.1411764706);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff24;
+          box-shadow: inset 0px 0px 3px #ffffff24;
 }
+
 .main .shortstats .btnMain {
   width: 23%;
 }
+
 .main .shortstats .shortstats_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 18%;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .main .shortstats .shortstats_item .btnRound {
   height: 25px;
   width: 25px;
 }
+
 .main .statsSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 15px;
   background: #0d0e15;
   border-radius: 13px;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
+
 .main .statsSingle .statsSingle_icon {
   width: 35px;
   height: 35px;
 }
+
 .main .statsSingle .statsSingle_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   width: 40%;
 }
+
 .main .statsSingle .statsSingle_info .range {
   position: relative;
   width: 100%;
 }
+
 .main .statsSingle .statsSingle_info .range .rangeInd {
   font-size: 12px;
   color: #ffffff;
 }
+
 .main .statsSingle .statsSingle_info .range .rangeMin {
   position: absolute;
   bottom: -8px;
   left: 0;
 }
+
 .main .statsSingle .statsSingle_info .range .rangeMax {
   position: absolute;
   bottom: -8px;
   right: 0;
 }
+
 .main .statsSingle .statsSingle_info .range .rangeInput {
   width: 100%;
 }
+
 .main .statsSingle .statsSingle_add {
   width: 20px;
   height: 20px;
   border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
+
 .main .carouselWrapper .walletCard {
   background-image: url(../img/walleCardBg.png);
   background-position: center top;
@@ -336,94 +464,125 @@
   background-repeat: no-repeat;
   padding: 15px 20px;
 }
+
 .main .carouselWrapper .walletCard .walletCard_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .textSec {
   color: #93aefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: normal;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .btnMain {
   background: #2850c5;
   font-weight: bold;
 }
+
 .main .carouselWrapper .walletCard .walletCard_top .walletCard_topItem .btnSmall {
   margin-left: 15px;
 }
+
 .main .carouselWrapper .walletCard .walletBalance {
   margin: 20px 0;
 }
+
 .main .walletLog {
   margin-top: 20px;
 }
+
 .main .carsSection .shortstats {
   margin-top: 20px;
 }
+
 .main .carsSection .carsCard {
   padding: 20px;
   border-radius: 15px;
   background: #0d0e15;
 }
+
 .main .carsSection .carsCard .carsCard_header .carsCard_header_item {
   width: 32%;
   height: 45px;
   padding: 0 10px;
   border-radius: 20px;
 }
+
 .main .carsSection .carsCard .carsCard_header .carsCard_header_item .btnRound {
   width: 25px;
   height: 25px;
 }
+
 .main .carsSection .carsCard .carsCard_img {
   margin-top: 20px;
 }
+
 .main .visualSection {
   margin-top: 20px;
 }
+
 .main .visualSection .vlWrapper {
   margin-top: 15px;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .main .visualSection .vlWrapper::-webkit-scrollbar {
   display: none;
 }
+
 .main .visualSection .visualList {
   width: 440px;
 }
+
 .main .visualSection .visualList .visualList_item {
   width: 100px;
 }
+
 .main .visualSection .visualDescr {
   margin-top: 20px;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview {
   padding: 0 15px;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side {
   position: relative;
   width: 44%;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side .btnRound {
   width: 25px;
   height: 25px;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side .btnMain,
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side .carsCard_header_item {
   width: 80%;
   margin: 5px;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side .bigIcon {
   position: relative;
   z-index: 2;
 }
+
 .main .visualSection .visualDescr .cardDark .itemPreview .itemPreview_side .previeBg {
   position: absolute;
   width: 85px;
@@ -433,6 +592,28 @@
   right: 10px;
   bottom: -10px;
   z-index: 1;
+}
+
+.main .statHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .statHolder .cardDark {
+  width: 49%;
+  margin: 10px 0;
+}
+
+.main .statHolder .cardDark .btnRound {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 #spoilers:hover, #spoilers:focus, #spoilers:active,
@@ -446,7 +627,14 @@
 #hood:focus,
 #hood:active {
   background: #2651d0;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2666666667);
+  -webkit-box-shadow: inset 0px 0px 3px #ffffff44;
+          box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
+#engine,
+#turbine,
+#gasTanks {
+  margin-left: 15px;
 }
 
 .menu {
@@ -454,27 +642,46 @@
   z-index: 10;
   bottom: 10px;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
   background: #0d0e15;
   border-radius: 25px;
   left: 5%;
 }
+
 .menu .menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 .menu .menuItem .menuItem_img {
   width: 25px;
   height: 25px;
 }
+
 .menu .menuItem .menuItem_text {
   margin-top: 10px;
 }
 
-/*Mediaqueries*//*# sourceMappingURL=style.css.map */
+/*Mediaqueries*/
+/*# sourceMappingURL=style.css.map */

@@ -85,6 +85,11 @@
   box-shadow: inset 0px 0px 3px #ffffff44;
 }
 
+.btnPurple {
+  background: #5a07a7;
+  box-shadow: inset 0px 0px 3px #ffffff44;
+}
+
 .boxShadow {
   box-shadow: inset 0px 0px 3px #ffffff24;
 }
@@ -173,4 +178,8 @@
 .carousel-control-next,
 .carousel-control-prev {
   z-index: 3;
+}
+
+.w100 {
+  width: 100%!important;
 }

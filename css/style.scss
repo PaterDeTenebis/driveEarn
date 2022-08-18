@@ -294,6 +294,21 @@
       }
     }
   }
+
+  .statHolder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .cardDark {
+      width: 49%;
+      margin: 10px 0;
+      .btnRound {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 #spoilers,
@@ -306,6 +321,12 @@
     background: #2651d0;
     box-shadow: inset 0px 0px 3px #ffffff44;
   }
+}
+
+#engine,
+#turbine,
+#gasTanks {
+  margin-left: 15px;
 }
 
 .menu {
